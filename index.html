@@ -27,7 +27,7 @@
     <div id="hero">
         <div class="overlay">
             <h1>Shannon Sullivan</h1>
-            <h3>Aspiring Web and Graphic Designer</h3>
+            <h3>Artist and Designer</h3>
         </div>
     </div>
     
@@ -35,8 +35,7 @@
 <!--Portfolio-->
     <div class="section" id="webDesign">
        <h1>Web Design</h1>
-       
-        <div class="container">
+        <div class="container" id="webContainer">
             <div class="content">
                 <div class=c40>
                     <img src="img/web1.png" alt="Web design">
@@ -49,11 +48,12 @@
             </div>
         </div>
     </div>
+
     
     <div class="section" id="graphics">
        <h1>Graphic Design and Animations</h1>
        
-        <div class="container">
+        <div class="container" id="graphicContainer">
             <div class="content">
                <div class="c40">
                    <img src="img/gd1.JPG" alt="graphic design">
@@ -100,11 +100,12 @@
             </div>
         </div>
     </div>
+
     
     <div class="section" id="painting">
        <h1>Paintings</h1>
        
-        <div class="container">
+        <div class="container" id="paintContainer">
             <div class="content">
                <div class="c40">
                     <img src="img/paint1.png" alt="Acrylic still life">
@@ -145,7 +146,7 @@
                 
                 <div class="c60">
                     <h2>"Shannon Nouveau"</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>This 8x10 inch acrylic painting was created as a project for an art history class. It features a self portrait in a classic art nouveau style, defined by it's vintage feel, naturalistic forms, and asymmetry.</p>
                 </div>
             </div>
         </div>
@@ -162,6 +163,24 @@
             $('#mobileNav').click(function(){
                 $('nav').toggle();
             }); 
+        </script>
+        
+        <script>
+            $('#webDesign').click(function(){
+                $('#webContainer').toggle();
+            });
+        </script>
+        
+        <script>
+            $('#graphics').click(function(){
+                $('#graphicContainer').toggle();
+            });
+        </script>
+        
+        <script>
+            $('#painting').click(function(){
+                $('#paintContainer').toggle();
+            });
         </script>
 </body>
 </html>

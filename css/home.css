@@ -27,6 +27,7 @@ header{
     position:fixed;
     top:0;
     border-bottom: 3px solid #fff;
+    z-index:2;
 }
 
 header img{
@@ -76,6 +77,25 @@ nav a:hover{
     text-align: center;
     margin: 50px auto;
     padding:50px;
+    animation-name: grow;
+    animation-duration: 3s;
+    animation-fill-mode:both;
+    
+}
+
+@keyframes grow{
+    0% {
+        transform:scale(1);
+        background-color:rgba(255,255,255, .85);
+    }
+    50%{
+        transform: scale(1.25);
+        background-color:rgba(255,255,255,1);
+    }
+    100% {
+        transform:scale(1);
+        background-color:rgba(255,255,255, .85);
+    }
 }
 
 
@@ -90,6 +110,7 @@ nav a:hover{
     padding:40px 0px;
     text-align: center;
 }
+
 
 .content{
     display:flex;
@@ -128,7 +149,7 @@ nav a:hover{
     padding: 20px 0px;
 }
 
-.c60 a:hover{text-decoration:underline;}
+.c60 a{text-decoration:underline;}
 
 
 
@@ -138,6 +159,7 @@ nav a:hover{
 #cta{
     background-color: #000;
     text-align:center;
+    height:150px;
 }
 
 #cta a{
@@ -148,10 +170,12 @@ nav a:hover{
     text-decoration: none;
     color:#000;
     font-weight: bold;
+    transition:.2s;
 }
 
 #cta a:hover{
     background-color: rgba(255,255,255,1);
+    transform: scale(1.1);
 }
 
 

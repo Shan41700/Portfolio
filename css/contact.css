@@ -124,10 +124,12 @@ nav a:hover{
     text-decoration: none;
     color:#000;
     font-weight: bold;
+    transition:.2s;
 }
 
 #cta a:hover{
     background-color: rgba(255,255,255,1);
+    transform: scale(1.1);
 }
 
 
