@@ -114,7 +114,10 @@ nav a:hover{
 .c60{width:60%;}
 
 .c40 img {max-width:100%;}
-.c60 p{max-width:100%;}
+.c60 p{
+    max-width:100%;
+    line-height: 2;
+}
 
 .c60 h2{
     margin: 0px 30px;
