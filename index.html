@@ -163,24 +163,25 @@
             $('#mobileNav').click(function(){
                 $('nav').toggle();
             }); 
-        </script>
         
-        <script>
             $('#webDesign').click(function(){
                 $('#webContainer').toggle();
             });
-        </script>
-        
-        <script>
+     
             $('#graphics').click(function(){
                 $('#graphicContainer').toggle();
             });
-        </script>
-        
-        <script>
+     
             $('#painting').click(function(){
                 $('#paintContainer').toggle();
             });
+        
+            if ($(window).width() < 700){
+            $('#webContainer').hide();
+            $('#graphicContainer').hide();
+            $('#paintContainer').hide();
+            }
+            
         </script>
 </body>
 </html>
