@@ -61,36 +61,46 @@ nav a:hover{
 #me{
     max-width:100%;
     margin:100px 30px;
-    display:flex;
     min-height:calc(100vh - 30vh);
 }
 
 #aboutPic{
-    width:40%;
     text-align:center;
+    margin: auto 0px;
+    padding:10px;
 }
 
 #aboutPic img{
     max-width: 100%;
 }
 
-
-
-/*About Text*/
 #about{
-    width:60%;
+    max-width:100%;
     margin:0px 30px;
+    display:flex;
 }
 
 #about h1{
     background-color:#000;
     color:#fff;
-    padding: 5px 0px 10px 10px;
+    padding: 10px;
+    margin-top:10px;
 }
 
-#aboutText{height:40%;}
 
-#contact{height:60%;}
+#contact{
+    height:40%;
+    max-width:100%;
+    text-align:center;
+    margin:30px;
+}
+
+#contact h1{
+    background-color:#000;
+    color:#fff;
+    padding: 10px;
+    margin-top:10px;
+}
 
 #aboutText p, #contact p{
     line-height:2.5;
@@ -169,15 +179,11 @@ nav a:hover{
     #logo{display:none;}
     
     /*Contact*/
-    #me{
+    #about{
         flex-direction:column;
         margin:0;
     }
     
-    #aboutPic{
-        width:75%;
-        margin:120px auto 40px auto;
-    }
     
     #about{
         width:100%;
@@ -195,8 +201,6 @@ nav a:hover{
         padding:15px 35px;
         
     }
-    
-
     
     footer{display:none;}
 }
