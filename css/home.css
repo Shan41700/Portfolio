@@ -152,7 +152,7 @@ nav a:hover{
 
 .c60 a{text-decoration:underline;}
 
-.writingContainer
+#writingContainer
 {
     width:100%;
     display:flex;

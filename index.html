@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -238,7 +239,7 @@
     
     <div class="section" id='writing'>
         <h1>Writing</h1>
-        <div class="writingContainer">
+        <div id="writingContainer">
             <a href="pdf/fashioningFatality.pdf" target="_blank">Fashioning Fatality</a>
             <a href="pdf/Play.pdf" target="_blank"> A Divenly Mundane Day</a>
         </div>
@@ -250,7 +251,6 @@
     </div>
     
     
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             $('#mobileNav').click(function(){
                 $('nav').toggle();
@@ -272,7 +272,7 @@
                 $('#animationContainer').toggle();
             });
             
-            $('#writing').click(function()){
+            $('#writing').click(function(){
                 $('#writingContainer').toggle();
             });
         
