@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="css/home.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 </head>
 
 <body>
@@ -104,12 +106,13 @@
         <div class="container" id="graphicContainer">
             <div class="content">
                <div class="c40">
-                   <img src="img/gd1.JPG" alt="graphic design">
+                   <div class="ss" id="ss1">
+                    </div>
                </div>
                 
                 <div class="c60">
-                    <h2>"The Heart"</h2>
-                    <p>This graphic was created for a social media awareness project that was campaigning for Net Neutrality. This was a piece from a collection of three different pieces all highlighting the importance of having a free and equal internet for all. This graphic was created using Adobe Illustrator.</p>
+                    <h2>"Rockstar Sequence"</h2>
+                    <p>For this project, I was tasked with creating a sequence that depicts movement. I started illustarting 10 different figures by hand using Micron pens and the stippling technique. I then transferred these drawings to Photoshop where I duplicated, resized, rotated, and flipped figures to create this continoius, 6-image set.</p>
                 </div>
             </div>
                
@@ -126,12 +129,13 @@
                
             <div class="content">
                 <div class="c40">
-                    <img src="img/package.png">
+                   <div class="ss" id="ss2">
+                    </div>
                 </div>
                 
                 <div class="c60">
                     <h2>Designing Chocolate</h2>
-                    <p>This is an example of a package design for a chocolate bar. The goal of this project was to create three unique flavors and three unique package designs connected by a central theme. I modeleded my chocolates after the first three The 1975 albums! </p>
+                    <p>For this assignment, I was tasked with creating, designing, and promoting a fictional chocolate promtion. I choose to imagine a colloboration between the chocolate company JCOCO and one of my favorite bands, The 1975. Here you can see my flavors and general design concept, package design, and marketing material.</p>
                 </div>
             </div>
                 
@@ -252,27 +256,28 @@
     
     
         <script>
+            /*Navigation and Layout*/
             $('#mobileNav').click(function(){
                 $('nav').toggle();
             }); 
         
-            $('#webDesign').click(function(){
+            $('#webDesign h1').click(function(){
                 $('#webContainer').toggle();
             });
      
-            $('#graphics').click(function(){
+            $('#graphics h1').click(function(){
                 $('#graphicContainer').toggle();
             });
      
-            $('#painting').click(function(){
+            $('#painting h1').click(function(){
                 $('#paintContainer').toggle();
             });
             
-            $('#animations').click(function(){
+            $('#animations h1').click(function(){
                 $('#animationContainer').toggle();
             });
             
-            $('#writing').click(function(){
+            $('#writing h1').click(function(){
                 $('#writingContainer').toggle();
             });
         
@@ -283,7 +288,6 @@
             $('#animationContainer').hide();
             $('#writingContainer').hide();
             }
-            
         </script>
 </body>
 </html>

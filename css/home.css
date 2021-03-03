@@ -172,6 +172,55 @@ nav a:hover{
     transform: scale(1.1);
 }
 
+.ss {
+    width:100%;
+    height:100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#ss1{
+    background-image: url(../img/seq1.jpg);
+    animation: slide1 25s infinite; 
+}
+
+#ss2{
+    background-image: url(../img/fbPage.png);
+    animation: slide2 25s infinite; 
+}
+
+
+@keyframes slide1{
+    16%{
+         background-image: url(../img/seq1.jpg);
+    }
+    32%{
+        background-image: url(../img/seq2.jpg);
+    }
+    48%{
+        background-image: url(../img/seq3.jpg);
+    }
+    64%{
+        background-image: url(../img/seq4.jpg);
+    }
+    80%{
+        background-image: url(../img/seq5.jpg);
+    }
+    100%{
+        background-image: url(../img/seq6.jpg);
+    }  
+}
+
+@keyframes slide2{
+    50%{
+         background-image: url(../img/fbPage.png);
+    }
+    100%{
+        background-image: url(../img/chocolate.jpg);
+    }
+}
+
+
 
 
 /*cta*/
