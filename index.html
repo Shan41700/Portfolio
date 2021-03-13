@@ -101,13 +101,35 @@
     
     
    <div class="section" id="graphics">
-       <h1>Graphic Design</h1>
+       <h1>Graphic Design and Illustration</h1>
        
         <div class="container" id="graphicContainer">
             <div class="content">
                <div class="c40">
-                   <div class="ss" id="ss1">
-                    </div>
+                   <div class="ssContainer">
+                        <div class="mySlides fade">
+                                <img src="img/seq1.jpg" style="width:100%">
+                          </div>
+                          <div class="mySlides fade">
+                                <img src="img/seq2.jpg" style="width:100%">
+                          </div>
+                          <div class="mySlides fade">
+                                <img src="img/seq3.jpg" style="width:100%">
+                          </div>
+                          <div class="mySlides fade">
+                                <img src="img/seq4.jpg" style="width:100%">
+                          </div>
+                          <div class="mySlides fade">
+                                <img src="img/seq5.jpg" style="width:100%">
+                          </div>
+                          <div class="mySlides fade">
+                                <img src="img/seq6.jpg" style="width:100%">
+                          </div>
+                      <div class="buttons">
+                         <div><a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a></div>
+                         <div><a class="next" onclick="plusSlides(1, 0)">&#10095;</a></div> 
+                      </div>
+                      </div>
                </div>
                 
                 <div class="c60">
@@ -129,8 +151,21 @@
                
             <div class="content">
                 <div class="c40">
-                   <div class="ss" id="ss2">
-                    </div>
+                   <div class="ssContainer">
+                        <div class="mySlides2 fade">
+                                <img src="img/chocolate.jpg" style="width:100%">
+                          </div>
+                          <div class="mySlides2 fade">
+                                <img src="img/fbPage.png" style="width:100%">
+                          </div>
+                          <div class="mySlides2 fade">
+                                <img src="img/package.png" style="width:100%">
+                          </div>
+                      <div class="buttons">
+                         <div><a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a></div>
+                          <div><a class="next" onclick="plusSlides(1, 1)">&#10095;</a></div>
+                      </div>
+                      </div>
                 </div>
                 
                 <div class="c60">
@@ -288,6 +323,27 @@
             $('#animationContainer').hide();
             $('#writingContainer').hide();
             }
-        </script>
+            
+            /*Slideshow*/
+            var slideIndex = [1,1];
+            var slideId = ["mySlides", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+
+            function plusSlides(n, no) {
+                showSlides(slideIndex[no] += n, no);
+            }
+
+            function showSlides(n, no) {
+                var i;
+                var x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) {slideIndex[no] = 1}    
+                if (n < 1) {slideIndex[no] = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                x[slideIndex[no]-1].style.display = "block";  
+            }
+    </script>
 </body>
 </html>
