@@ -140,12 +140,12 @@
                
             <div class="contentb">
                 <div class="c40">
-                    <img src="img/tp.png">
+                    <img src="img/wed1.jpg">
                 </div>
                 
                 <div class="c60">
-                    <h2>Travel Posters</h2>
-                    <p>For this project I was tasked with creating posters that represented places. I chose my hometown of Rockaway, New York and my college town of Savannah, Georgia. This image shows the two posters placed in a 'real' enviornment.</p>
+                    <h2>Shannon's Wednesday</h2>
+                    <p>The goal of this project was to draw a self portrait as a specific character. I chose Wednesday Addams from the movie Addams Family Values.This is a white charcoal drawing on 22x30in blck paper.</p>
                 </div>
             </div>
                
@@ -176,23 +176,23 @@
                 
             <div class="contentb">
                <div class="c40">
-                    <img src="img/gd3.png" alt="graphic design">
-               </div>
+                        <img src="img/c1.jpg" style="width:100%">
+                </div>
                 
                 <div class="c60">
-                    <h2>"SAM Portrait Postcard"</h2>
-                    <p>For this project, I was tasked to create a promotional poster for a fictional art exhibit. This poster is a self-portrait styled in the vaporwave aesthetic and was created using Illustrator. As part of the fictional promotion, the promotional poster had to be placed within context. So I chose to edit my SAM Portrait onto a postcard using Photoshop.</p>
+                    <h2>"Study Session"</h2>
+                    <p>This was my final project for my Drawing II class. For this project, I had to draw a self portrait with enviornmental symbolism. The main theme of this is the juxtaposition of light and dark. I drew all assets in Illustrator and edited the collage together in Photoshop.</p>
                 </div>
             </div>
                 
             <div class="content">
                <div class="c40">
-                    <img src="img/tattFlash1.png" alt="graphic design">
+                    <img src="img/tp.png" alt="graphic design">
                 </div>
                 
                 <div class="c60">
-                    <h2>"Horror Flash"</h2>
-                    <p>This is a series of graphics I created, inspired by some of my favorite classic horror films, presented in the style of a tattoo artist’s flash tattoo sheet. All graphics were created using Adobe Illustrator.</p>
+                    <h2>"Travel Posters"</h2>
+                    <p>These location posters represent my different homes: My home town of Rockaway, New York and my college town of Savannah, Georgia. I created these posters in Adobe Illustrator and edited them into the space using Photoshop.</p>
                 </div>
             </div>
         </div>
@@ -337,7 +337,7 @@
             
             /*Slideshow*/
             var slideIndex = [1,1];
-            var slideId = ["mySlides", "mySlides2"]
+            var slideId = ["mySlides", "mySlides2", "mySlides3"]
             showSlides(1, 0);
             showSlides(1, 1);
 
@@ -348,10 +348,10 @@
             function showSlides(n, no) {
                 var i;
                 var x = document.getElementsByClassName(slideId[no]);
-                if (n > x.length) {slideIndex[no] = 1}    
+                if (n > x.length) {slideIndex[no] = 1}
                 if (n < 1) {slideIndex[no] = x.length}
                 for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
+                    x[i].style.display = "none";
                 }
                 x[slideIndex[no]-1].style.display = "block";  
             }
