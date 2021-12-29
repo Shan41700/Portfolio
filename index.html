@@ -3,284 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/home.css">
+    
+    <link rel="stylesheet" href="css/home2.css">
+    
     <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
 </head>
 
 <body>
 <!--navigation-->
    <header>
-       <div id="logo"><img src="img/LogoColor.png"></div>
-       <div id="mobileNav"><a href=#><img src="img/sig.png"></a></div>
-        <nav>
+       <div id="logo"><a href="index.html"><img src="img/LogoColor.png"></a></div>
+       <nav>
            <ul>
-               <li><a href="index.html#animations">Animations</a></li>
-               <li><a href="index.html#graphics">Graphics</a></li>
-               <li><a href="index.html#webDesign">Web Design</a></li>
-               <li><a href="index.html#writing">Writing</a></li>
+               <li><a href="index.html">HOME</a></li>
                <li><a href="contact.html">CONTACT</a></li>
            </ul>
-        </nav>
+       </nav>
+       <div id="headerText"><a href="contact.html"><h1>Shannon  C  Sullivan</h1></a></div>
+       <div id="mobileNav"><img src="img/LogoColor.png"></div>
     </header>
     
-<!--hero-->
-    <div id="hero">
-        <div class="overlay">
-            <h1>Shannon Sullivan</h1>
-            <h3>Artist and Designer</h3>
-        </div>
+    <div id="title">
+        <h1>Artist and Designer</h1>
     </div>
     
-    
-<!--Portfolio-->
-    <div class="section" id="animations">
-       <h1>Animations</h1>
-       
-        <div class="container" id="animationContainer">
-            <div class="content">
-               <div class="c40">
-                   <iframe width="560" height="315" src="https://www.youtube.com/embed/FpXOOZvG5vk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
-                
-                <div class="c60">
-                    <h2>"Cloud Car"</h2>
-                    <p>This animation was inspired by the song 'Cary Me Back' by Mild High Club. I created the illustration in Adobe Illustrator and animated it using Adobe After Effects.</p>
-                </div>
-            </div>
-               
-            <div class="contentb">
-               <div class="c40">
-                   <iframe width="560" height="315" src="https://www.youtube.com/embed/nHgI6ongxQ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                
-                <div class="c60">
-                    <h2>"Sunset Bridge"</h2>
-                    <p>This animation is based on my view of the bay at my job. Created in Illustrator, animated with After Effects.</p>
-                </div>
-            </div>
-                
-            <div class="content">
-               <div class="c40">
-                   <iframe width="560" height="315" src="https://www.youtube.com/embed/l-v_tUdJEwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                
-                <div class="c60">
-                    <h2>"Spacing Out"</h2>
-                    <p>Inspired by the 'lofi' aesthetic, this animation is a collage of raster images, vector drawings, and video all animated using Adobe After Effectcs. </p>
-                </div>
-            </div>
-                
-            <div class="contentb">
-               <div class="c40">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lwGFn_Ug9_E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
-                
-                <div class="c60">
-                    <h2>"An Abduction"</h2>
-                    <p>This animation was inspired by the song "The Alien" by Manchester Orchestra. Created in Illustrator, animated with After Effects.</p>
-                </div>
-            </div>
-                
-            <div class="content">
-               <div class="c40">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Mqt0gsGNGH8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                
-                <div class="c60">
-                    <h2>"Duck Amuck"</h2>
-                    <p>This piece was inspired by one of my favorite Looney Tunes episodes of all time: Duck Amuck. I created all the graphics using Adobe Illustrator and I used After Effects to animate it.</p>
-                </div>
-            </div>
+    <div id="container">
+        <div class="col">
+           <div class="item projectVid" id="myItem">
+               <iframe src="https://www.youtube.com/embed/FpXOOZvG5vk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" longdesc="'Cloud Car' : Assets created using Adobe Illustrator, animated with Adobe After Effects"></iframe>
+               <img src="img/cc.png">
+           </div>
+           
+            <div class="item projectImg" id="myItem">
+               <img src="img/c1.jpg" style="width:100%" alt="'Self Portrait Collage' : Created with Adobe Illustrator">
+           </div>
+           
+           <div class="item projectImg" id="myItem">
+               <img src="img/chocolate.jpg" alt="'Chocolate Branding' : Made using Adobe Photoshop">
+           </div>
+             
+           <div class="item projectImg" id="myItem">
+               <img src="img/AL-01.png" alt="'Birthday Graphic': Commissioned digital portrait">
+           </div>
         </div>
+        
+        <div class="col">
+           <div class="item projectVid" id="myItem">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/ACgkwtTZsHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <img src="img/futureAesthetics.png">
+           </div>
+           
+            <div class="item projectImg" id="myItem">
+                <img src="img/tp.png" alt="'Travel Posters' : Created using Adobe Illustrator and Adobe Photoshop">
+           </div>
+           
+           <div class="item projectImg" id="myItem">
+               <img src="img/wed1.jpg" alt="'Shannon's Wednesday' : White charcoal on black paper">
+           </div>
+           
+           <div class="item projectVid" id="myItem">
+               <iframe src="https://www.youtube.com/embed/nHgI6ongxQ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="'Sunset Bridge' :Assets created in Adobe Illustrator, animated with Adobe After Effects"></iframe>
+               <img src="img/bridge.png">
+           </div>
+        </div>
+        
+        <div class="col">
+           <div class="item projectVid" id="myItem" class="projectVid">
+              <iframe src="https://www.youtube.com/embed/Mqt0gsGNGH8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="'Duck Amuck': Assets created in Adobe Illustrator, animated using Adobe After Effects"></iframe>
+               <img src="img/daffy.png">
+           </div>
+           
+            <div class="item projectVid" id="myItem">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/l-v_tUdJEwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <img src='img/space.png' alt="'Cosmic Chilling' : Assets created using Illustrator and Photoshop, animated with Adobe After Effects">
+           </div>
+           
+           <div class="item projectImg" id="myItem">
+               <img src="img/paint1.png" alt="'Still Life': Acrylic on canvas">
+           </div>
+           
+           <div class="item projectImg" id="myItem">
+               <img src="img/chloe.jpg" alt="'Painted Portrait' : Commissioned portrait created using acrylic paint.">
+           </div>
+        </div>
+        
     </div>
     
-    
-   <div class="section" id="graphics">
-       <h1>Graphic Design and Illustration</h1>
-       
-        <div class="container" id="graphicContainer">
-            <div class="content">
-               <div class="c40">
-                   <div class="ssContainer">
-                        <div class="mySlides fade">
-                                <img src="img/seq1.jpg" style="width:100%">
-                          </div>
-                          <div class="mySlides fade">
-                                <img src="img/seq2.jpg" style="width:100%">
-                          </div>
-                          <div class="mySlides fade">
-                                <img src="img/seq3.jpg" style="width:100%">
-                          </div>
-                          <div class="mySlides fade">
-                                <img src="img/seq4.jpg" style="width:100%">
-                          </div>
-                          <div class="mySlides fade">
-                                <img src="img/seq5.jpg" style="width:100%">
-                          </div>
-                          <div class="mySlides fade">
-                                <img src="img/seq6.jpg" style="width:100%">
-                          </div>
-                      <div class="buttons">
-                         <div><a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a></div>
-                         <div><a class="next" onclick="plusSlides(1, 0)">&#10095;</a></div> 
-                      </div>
-                      </div>
-               </div>
-                
-                <div class="c60">
-                    <h2>"Rockstar Sequence"</h2>
-                    <p>For this project, I was tasked with creating a sequence that depicts movement. I started illustarting 10 different figures by hand using Micron pens and the stippling technique. I then transferred these drawings to Photoshop where I duplicated, resized, rotated, and flipped figures to create this continoius, 6-image set.</p>
-                </div>
-            </div>
-               
-            <div class="contentb">
-                <div class="c40">
-                    <img src="img/wed1.jpg">
-                </div>
-                
-                <div class="c60">
-                    <h2>Shannon's Wednesday</h2>
-                    <p>The goal of this project was to draw a self portrait as a specific character. I chose Wednesday Addams from the movie Addams Family Values. This is a white charcoal drawing on 22x30in black paper.</p>
-                </div>
-            </div>
-               
-            <div class="content">
-                <div class="c40">
-                   <div class="ssContainer">
-                        <div class="mySlides2 fade">
-                                <img src="img/chocolate.jpg" style="width:100%">
-                          </div>
-                          <div class="mySlides2 fade">
-                                <img src="img/fbPage.png" style="width:100%">
-                          </div>
-                          <div class="mySlides2 fade">
-                                <img src="img/package.png" style="width:100%">
-                          </div>
-                      <div class="buttons">
-                         <div><a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a></div>
-                          <div><a class="next" onclick="plusSlides(1, 1)">&#10095;</a></div>
-                      </div>
-                      </div>
-                </div>
-                
-                <div class="c60">
-                    <h2>Designing Chocolate</h2>
-                    <p>For this assignment, I was tasked with creating, designing, and promoting a fictional chocolate promtion. I choose to imagine a colloboration between the chocolate company JCOCO and one of my favorite bands, The 1975. Here you can see my flavors and general design concept, package design, and marketing material.</p>
-                </div>
-            </div>
-                
-            <div class="contentb">
-               <div class="c40">
-                        <img src="img/c1.jpg" style="width:100%">
-                </div>
-                
-                <div class="c60">
-                    <h2>"Study Session"</h2>
-                    <p>This was my final project for my Drawing II class. For this project, I had to draw a self portrait with enviornmental symbolism. The main theme of this is the juxtaposition of light and dark. I drew all assets in Illustrator and edited the collage together in Photoshop.</p>
-                </div>
-            </div>
-                
-            <div class="content">
-               <div class="c40">
-                    <img src="img/tp.png" alt="graphic design">
-                </div>
-                
-                <div class="c60">
-                    <h2>"Travel Posters"</h2>
-                    <p>These location posters represent my different homes: My home town of Rockaway, New York and my college town of Savannah, Georgia. I created these posters in Adobe Illustrator and edited them into the space using Photoshop.</p>
-                </div>
-            </div>
-        </div>
+    <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <iframe id="modalVideo"></iframe>
+          <div id="caption"></div>
     </div>
     
-    <div class="section" id="webDesign">
-       <h1>Web Design</h1>
-        <div class="container" id="webContainer">
-            <div class="content">
-                <div class=c40>
-                    <img src="img/web1.png" alt="Web design">
-                </div>
-                
-                <div class="c60">
-                    <a href="https://shan41700.github.io/1975/" target=_blank><h2>"The 1975"</h2></a>
-                    <p>This website was created as a midterm project for my Introduction to Web Design class. For this project, I designed a possible website for the band “The 1975”. I then built this website using HTML 5 and CSS. This website is also mobile responsive. The website is deployed on an open-source site hosting service called Github.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="section" id='writing'>
-        <h1>Writing</h1>
-        <div id="writingContainer">
-            <a href="pdf/fashioningFatality.pdf" target="_blank">Fashioning Fatality</a>
-            <a href="pdf/Play.pdf" target="_blank"> A Divenly Mundane Day</a>
-        </div>
-    </div>
-    
-<!--Contact-->
     <div id="cta">
         <a href="contact.html">Contact Information</a>
     </div>
     
-    
-        <script>
-            /*Navigation and Layout*/
+    <script>
+        /*Navigation and Layout*/
             $('#mobileNav').click(function(){
                 $('nav').toggle();
             }); 
         
-            $('#webDesign h1').click(function(){
-                $('#webContainer').toggle();
-            });
-     
-            $('#graphics h1').click(function(){
-                $('#graphicContainer').toggle();
-            });
-     
-            $('#painting h1').click(function(){
-                $('#paintContainer').toggle();
-            });
-            
-            $('#animations h1').click(function(){
-                $('#animationContainer').toggle();
-            });
-            
-            $('#writing h1').click(function(){
-                $('#writingContainer').toggle();
-            });
-        
-            if ($(window).width() < 850){
-            $('#webContainer').hide();
-            $('#graphicContainer').hide();
-            $('#paintContainer').hide();
-            $('#animationContainer').hide();
-            $('#writingContainer').hide();
-            }
-            
-            /*Slideshow*/
-            var slideIndex = [1,1];
-            var slideId = ["mySlides", "mySlides2", "mySlides3"]
-            showSlides(1, 0);
-            showSlides(1, 1);
+        // create references to the modal...
+        var modal = document.getElementById('myModal');
+        // to all images -- note I'm using a class!
+        var images = document.getElementsByClassName('item');
+        // the image in the modal
+        var modalImg = document.getElementById("img01");
+        var modalVid = document.getElementById("modalVideo");
+        // and the caption in the modal
+        var captionText = document.getElementById("caption");
 
-            function plusSlides(n, no) {
-                showSlides(slideIndex[no] += n, no);
-            }
-
-            function showSlides(n, no) {
-                var i;
-                var x = document.getElementsByClassName(slideId[no]);
-                if (n > x.length) {slideIndex[no] = 1}
-                if (n < 1) {slideIndex[no] = x.length}
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
+        // Go through all of the images with our custom class
+        for (var i = 0; i < images.length; i++) {
+            //Classes define images vs videos, class determines action
+            if (images[i].className.indexOf('projectImg')>-1){
+                var img = images[i];
+                // and attach our click listener for this image.
+                img.onclick = function(elem) {
+                    modal.style.display = "block";
+                    modalImg.src = this.children[0].src;
+                    captionText.innerHTML = this.children[0].alt;
+                    console.log(this);
+                    modalVid.style.display="none";
                 }
-                x[slideIndex[no]-1].style.display = "block";  
             }
+            
+            else{
+                var img = images[i];
+                // and attach our click listener for this image.
+                img.onclick = function(elem) {
+                    modal.style.display = "block";
+                    modalVid.src = this.children[0].src;
+                    captionText.innerHTML = this.children[1].alt;
+                    console.log(this);
+                }
+            }
+        }
+        
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
     </script>
 </body>
-</html>

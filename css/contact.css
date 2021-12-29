@@ -13,54 +13,51 @@ body{
     min-height:100%;
 }
 
-#mobileNav{
-    display:none;
-}
-
 
 
 
 /*Navigation*/
+#mobileNav{display:none;}
+
 header{
     min-width:100%;
+    background-color:#000;
     display:flex;
     position:fixed;
     top:0;
-    background-color:#000;
+    border-bottom: 3px solid #fff;
+    z-index:2;
 }
 
 header img{
     height:80px;
-    padding:10px 0px 15px 20px;
+    padding: 10px;
+
 }
 
-nav{
-    width:100%;
-    text-align:right;
-    margin:30px 0px;
+#headerText{
+    margin: 20px auto;
+    font-size: 20px;
 }
 
-nav li{
-    display:inline-block;
-    padding: 0px 30px;
-}
+#headerText h1{font-family: 'Pacifico', cursive;}
 
-nav a{
+#headerText a{
+    color: rgba(179,161,206,255);
+    margin: 20px auto;
     text-decoration: none;
-    color:#fff;
-    font-weight: bold;
 }
 
-nav a:hover{
-    text-decoration: underline;
-}
+#logo:hover nav ul{display:inline-block}
+nav{display:none;}
+
 
 
 
 /* About */
 #me{
     max-width:100%;
-    margin:100px 30px;
+    margin:125px 30px;
     min-height:calc(100vh - 30vh);
 }
 
@@ -145,38 +142,24 @@ nav a:hover{
 
 /*Mobile*/
 @media (max-width:600px){
+     /*Nav*/
+    header{
+        text-align: center;
+    }
     
-    /*Nav*/
+    #headerText{display:none;}
+    
     #mobileNav{
         display: inline-block;
         background-color:#000;
         position: absolute;
         width:100%;
+        height:90px;
+        padding:5px 20px;
     }
-    
-    nav {
-        position:static;
-        margin:100px 0px 0px 0px;
-        display:none;
-        text-align: center;
-    }
-    
-    nav li{
-        display:block;
-        padding:0;
-    }
-    
-    nav a {
-        width:100%;
-        display:block;
-        border:none;
-        border-bottom: 1px solid #fff;
-        color: #fff;
-        text-decoration: none;
-        padding: 5px 0px;
-    }
-    
+
     #logo{display:none;}
+    
     
     /*Contact*/
     #about{
