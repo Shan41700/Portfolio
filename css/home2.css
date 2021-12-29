@@ -1,0 +1,285 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    font-style: bold 700;
+    
+}
+
+a{
+    text-decoration:none;
+    color:#000;
+}
+
+
+img, iframe{
+    max-width:100%;
+    max-height: 100%;
+}
+
+body{
+    background: linear-gradient(rgba(255,255,255,255), rgba(179,161,206,255));
+    
+}
+
+
+
+/*Navigation*/
+#mobileNav{display:none;}
+
+header{
+    min-width:100%;
+    background-color:#000;
+    display:flex;
+    position:fixed;
+    top:0;
+    border-bottom: 3px solid #fff;
+    z-index:2;
+}
+
+
+#headerText{
+    text-align: center;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin:0 auto;
+    font-size:20px;
+}
+
+#headerText h1{font-family: 'Pacifico', cursive;}
+
+#headerText a{
+    color: rgba(179,161,206,255);
+    margin: 20px auto;
+}
+
+#logo{
+    height:75px;
+    padding-top:10px;
+    padding-left:10px;
+    margin: 10px;
+}
+
+#logo img:hover nav ul{display:block;}
+
+nav ul{ 
+    display:none;
+    list-style:none;
+    margin-top:100px;
+    width:0px;
+}
+
+nav a{
+    text-decoration: none;
+    color:rgba(179,161,206,255);
+    font-size: 20px;
+}
+
+nav li{padding:5px;}
+
+nav a:hover{
+    text-decoration: underline;
+    color:#fff;
+}
+
+
+
+/*Main Content*/
+#title{
+    margin-top:150px;
+    margin-left:75px;
+    margin-bottom:40px;
+    text-align: center;
+    padding-left:
+}
+#container{
+    margin:0px 100px;
+    display:flex;
+    flex-direction:row;
+}
+
+.col{
+    width:1000px;
+    margin-bottom:50px;
+}
+
+.item{
+    max-width:100%;
+    max-height:500px;
+    padding:5px;
+}
+.item p{display:none;}
+
+#myItem {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myItem:hover {
+    opacity: 0.7;
+}
+
+.projectVid iframe{display:none;}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    margin-top: 110px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%;/* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+    text-align:center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    padding-top:25px;
+}
+
+#modalVideo{
+    width:70%;
+    height:400px;
+    margin:25px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content,#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*cta*/
+#cta{
+    background-color: #000;
+    text-align:center;
+    height:150px;
+}
+
+#cta a{
+    display:inline-block;
+    padding:40px 30px;
+    margin: 20px 0px 50px 0px;
+    background-color: rgba(255,255,255,.85);
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+    transition:.2s;
+}
+
+#cta a:hover{
+    background-color: rgba(255,255,255,1);
+    transform: scale(1.1);
+}
+
+
+/*Mobile*/
+@media (max-width:850px){
+    /*Nav*/
+    header{
+        text-align: center;
+    }
+    
+    #headerText{display:none;}
+    
+    #mobileNav{
+        display: inline-block;
+        background-color:#000;
+        position: absolute;
+        width:100%;
+        height:90px;
+        padding:5px 20px;
+    }
+
+    nav {
+        text-align: center;
+        width:100%;
+    }
+    
+    nav ul{
+        display:block;
+        padding:10px;
+        width:100%;
+    }
+    
+    nav a {
+        width:100%;
+        display:block;
+        border: 1px solid #fff;
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 0px;
+    }
+    
+    #logo{display:none;}
+    
+
+    /*Portfolio*/
+    #title{
+        margin: 120px  0px 20px auto;
+    }
+    #title h1{
+        margin: 0 auto;
+    }
+    #container{
+        flex-direction: column;
+        margin:0px 20px;
+    }
+    
+    .col{
+        max-width:100%;
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+    .modal{
+        margin-top:95px;
+    }
+}
+
